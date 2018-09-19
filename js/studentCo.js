@@ -85,6 +85,18 @@ function authenticate(username, password){
 	window.console.log("authenticate-end");
 }
 
+function authenticateCallback(ret){
+    window.console.log("authenticateCallback-start");
+    if(ret=='1'){
+        g_isConnected=true;
+    }
+    else
+    {
+        initApp();
+    }
+    window.console.log("authenticateCallback-end");
+}
+
 function fetchCoDisciples(){
 	window.console.log("fetchCoDisciples-start");
 	$.ajax({
@@ -96,18 +108,6 @@ function fetchCoDisciples(){
 	window.console.log("fetchCoDisciples-end");
 }
 
-
-function authenticateCallback(ret){
-	window.console.log("authenticateCallback-start");
-	if(ret=='1'){
-		g_isConnected=true;
-	}
-	else
-		{
-		initApp();
-		}
-	window.console.log("authenticateCallback-end");
-}
 
 function fetchCoDisciplesCallback(ret){
 	window.console.log("fetchCoDisciplesCallback-start");
