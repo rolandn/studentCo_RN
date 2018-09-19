@@ -1,0 +1,6 @@
+Options +FollowsSymlinks
+RewriteEngine On
+
+RewriteRule ^login/([0-9a-z]+)/([0-9a-z]+)$ bl/RestControler.php?method=authenticate&username=$1&password=$2 [nc,qsa]
+
+RewriteRule ^fetchCodiple//([0-9a-z]+)/([0-9a-z]+)$ bl/RestControler.php?method=authenticate&username=$1&password=$2 [nc,qsa]

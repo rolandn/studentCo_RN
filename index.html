@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- studentCo.v011 -->
+<html>
+<head>
+<meta charset="utf-8">
+<title>StudentCo</title>
+<link rel="stylesheet" href="CSS/bootstrap.min.css">
+<link rel="stylesheet" href="CSS/style.css">
+<script type="text/javascript" src="./js/studentCo.js"></script>
+<script type="text/javascript" src="./js/jquery-1.9.1.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet"> 
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="container">
+			<div class="row" >
+				<div class="col-md-12 title">
+				<h1 class="center">StudentCo</h1>
+				<p class="center" style="font-family: 'Titillium Web', sans-serif; font-size:15px;">
+					Le réseau social des étudiants
+				</p>
+				<h2 id="connectBox" class="textRight" style="margin-right:35px; font-size:20px;">Déconnecté</h2>
+				</div>
+				<div class="col-md-12">
+				
+					<div class="section left">
+							<h2 class="inverse">Les tweets</h2>
+							<p class="menuP">
+								<br /> <a href="#" onclick="fetchTweet(-1);">Mon mur</a><br />
+								<br /> <a href="#" onclick="fetchCoDisciples();">Liste des co'disciples</a><br />
+								<br /> <a href="#" onclick="fetchTweetToDelete();">Supprimer un tweet</a><br />
+								<br />
+							</p>
+					</div>
+				
+<!-- 					<fieldset class="inputText right"> -->
+					<input tabindex=3 style="width:120px; font-size:13px; margin-left:5px; background-color:rgb(228,229,231); border:0px;" class="btn btn-warning right" id="boutonLogin" type="button" value="Se connecter" onclick="doConnect();"/>
+					<input tabindex=2 class="inputText right" style="width: 80px;" id="logPassword" type="password" name="password" maxlength="8" value="" title="Votre mot de passe." />
+					<input tabindex=1 class="inputText right" style="width: 80px;" id="logUsername" type="text" name="username" maxlength="8" value="" title="Votre nom d'utilisateur." />
+
+<!-- 					</fieldset> -->
+				</div>
+				
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" id="menu">
+
+
+					<div class="section">
+						<h2 class="inverse">Les Co'Disciples</h2>
+						<p class="menuP">
+							<br /> <a href="#" onclick="addCoDisciple();">Ajouter un co'disciple</a><br />
+							<br /> <a href="#" onclick="fetchCoDisciplesToDelete();">Supprimer un co'disciple</a><br />
+							<br /> <a href="#" onclick="invitationSent();">Invitations envoyées (en cours)</a><br />
+							<br /> <a href="#" onclick="invitationReceived();">Invitations reçues (en cours)</a><br />
+							<br />
+						</p>
+					</div>
+					
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" id="page">
+					
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" id="wall">
+					
+				</div>
+			</div>
+		</div>
+	
+	</div>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6" style="margin-top:150px;">
+        <h3 style="font-size:12px;" class="center">Merci pour votre visite</h3>
+        <h3 class="copyright center" style="color: rgb(124,117,121);">Copyright &copy; RN 2018 All Rights Reserved</h3>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+</footer>
+	
+	<script type="text/javascript">
+		initApp();
+	</script>
+</body>
+</html>

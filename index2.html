@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Studio</title>
+<meta charset="utf-8">
+<!-- <link rel="stylesheet" type="text/css" href="assets/css/boot.css"> -->
+<!-- <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css"> -->
+<!-- <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"> -->
+<!-- <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css"> -->
+<!-- <link rel="stylesheet" type="text/css" href="assets/css/style_common.css"> -->
+<!-- <link rel="stylesheet" type="text/css" href="assets/css/style1.css"> -->
+<link rel="stylesheet" href="CSS/style.css">
+<script type="text/javascript" src="./js/studentCo.js"></script>
+<script type="text/javascript" src="./js/jquery-1.9.1.js"></script>
+<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic'>
+<script src="assets/js/modernizr.custom.69142.js"></script>
+<script src="assets/js/jquery-1.10.1.min.js"></script>
+<script src="assets/js/bootstrap.min.js" ></script>
+<script type="text/javascript" src="./js/studentCo.js"></script>
+<script type="text/javascript" src="./js/jquery-1.9.1.js"></script>
+
+</head>
+<body>
+<div id="page-top" class="index">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        <a class="navbar-brand page-scroll" href="#page-top">Studio</a></div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+			<li><a class="page-scroll" href="#page-top">Home</a></li>
+			<li><a class="page-scroll" href="#services">Se connecter</a></li>
+			<li><a class="page-scroll" href="#port">Portfolio</a></li>
+			<li><a class="page-scroll" href="#about">About</a></li>
+			<li><a class="page-scroll" href="#team">Team</a></li>
+			<li><a class="page-scroll" href="#contact">Contact</a></li>
+		<!--	<li><legend id="connectBox">Déconnecté</legend> -->
+        </ul>
+      </div>
+    </div><!-- /.container-fluid -->
+  </nav>
+  <!-- accueil -->
+  <header style="background-image:url(assets/img/3218_Computer-power-abstract-binary-code.jpg)">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-lead-in">Welcome To StudentCo!</div>
+        <div class="intro-heading">It's Nice To Meet You</div>	
+        <a href="#services" class="page-scroll btn btn-primary">Tell Me More</a></div>				
+    </div>
+  </header>
+</div>
+<!-- ===== services ===== -->
+<section id="services">
+
+<div class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+				<h1>StudentCo</h1>
+				<p>
+					Le réseau social des étudiants
+				</p>
+				</div>
+				<div class="col-md-6">
+					<fieldset class="inputText">
+					<legend id="connectBox">Déconnecté</legend>
+					<input class="inputText" style="width: 80px;" id="logUsername" type="text" name="username" maxlength="8" value="" title="Votre nom d'utilisateur." />
+					<input class="inputText" style="width: 80px;" id="logPassword" type="text" name="password" maxlength="8" value="" title="Votre mot de passe." />
+					<input style="width: 90px;" class="btn btn-warning" id="boutonLogin" type="button" value="Se connecter" onclick="doConnect();" />
+					</fieldset>
+				</div>
+			
+				<div class="col-md-4" id="menu">
+					<div class="section">
+						<h2 class="inverse">Les tweets</h2>
+						<p class="menuP">
+							<a href="#">Ecrire un tweet</a><br />
+							<br /> <a href="#">Supprimer un tweet</a><br />
+							<br />
+						</p>
+					</div>
+
+					<div class="section">
+						<h2 class="inverse">Les Co'Disciples</h2>
+						<p class="menuP">
+							<a href="#">Liste des co'disciples</a><br />
+							<br /> <a href="#">Ajouter un co'disciple</a><br />
+							<br /> <a href="#">Supprimer un co'disciple</a><br />
+							<br /> <a href="#">Les approbations</a><br />
+							<br />
+						</p>
+					</div>
+					
+				</div>
+				<div class="col-md-4" id="page">
+
+				</div>
+				<div class="col-md-4" id="wall">
+
+				</div>
+			</div>
+		</div>
+	
+	</div>
+
+</section>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <h3 style="color:#3680C1">Merci pour votre visite</h3>
+        <h3 class="copyright">Copyright &copy; Roland</h3>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+</footer>
+</body>
+	<script type="text/javascript">
+		initApp();
+		pubs();
+	</script>
+</html>
