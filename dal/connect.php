@@ -3,8 +3,8 @@
 define("PILOTE", "mysql");
 define("SERVERIP", "localhost");
 define("BASEDB", "studentco");
-define("USERDB", "roland");
-define("PSWDB","0000");
+define("USERDB", "root");
+define("PSWDB","");
 //Data source name
 define("DSN", PILOTE.":host=".SERVERIP.";dbname=".BASEDB);
 //

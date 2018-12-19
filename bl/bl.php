@@ -1,5 +1,5 @@
 <?php
-define ("ROOTSITE", $_SERVER["DOCUMENT_ROOT"]."/studentco/");
+define ("ROOTSITE", $_SERVER["DOCUMENT_ROOT"]."/studentCO_RN/");
 define ("DAL", ROOTSITE. 'dal/dal.php');
 require_once DAL;
 

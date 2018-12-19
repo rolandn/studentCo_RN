@@ -472,7 +472,7 @@ function AcceptInvitation(id){
 	window.console.log("AcceptInvitation() -start");
 	$.ajax({
 		type:'GET',
-		url:'http://localhost/studentCo/bl/AcceptInvitation.php',
+		url:'http://localhost/studentCo_RN/bl/AcceptInvitation.php',
 		data: "id="+id,
 		dataType:'text',
 		success: AcceptInvitationCallBack
